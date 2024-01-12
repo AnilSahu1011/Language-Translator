@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Family Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Sevillana&display=swap" rel="stylesheet">
+    <!-- Font Family Start -->
+
+    <!-- Link Icons Start -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"/>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <!-- Link Icons End -->
+
+    <title>Language Translator</title>
+
+    <!-- StyleSheet Start -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="TranslatorCSS.css"/>
+    <link rel="stylesheet" href="preLoader.css"/>
+    <!-- StyleSheet End -->
+
+    <!-- Website Icon -->
+    <link rel="icon" href="p.png"/>
+
+</head>
+<body onload="myFunction()">
+  <script>
+    const fadeOut = () => {
+      const loaderWraper = document.querySelector('#preloader');
+      loaderWraper.classList.add('fade');
+    }
+    window.addEventListener('load',fadeOut);
+  </script>
+    <div id="preloader">
+        <div class="wra">
+          <div class="bird">
+            <div class="hair-container">
+              <div class="hair"></div>
+            </div>
+            <div class="face">
+              <div class="white-container">
+                <div class="white"></div>
+              </div>
+              <div class="shadow-container">
+                <div class="shadow"></div>
+              </div>
+              <div class="bigBeak-container">
+                <div class="bigBeak"></div>
+              </div>
+              <div class="smallBeak-container">
+                <div class="smallBeak"></div>
+              </div>
+              <div class="eye"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Header section Start -->
+      <header>
+        <a href="#" class="logo"><img src="Logo.png" alt=""></a>
+        <div class="box box-menu" id="menu-icon"><a><i class="lni lni-menu"></i></a></div>
+
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#translator">Translator</a></li>
+          <li><a href="#howToUse">How To Use</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-btn">
+          <!-- <a href="#" class="trynow">Download</a> -->
+          <a href="#translator" class="download">Try Now</a>
+        </div>
+        <script src="menu.js"></script>
+      </header>
+    <!-- Header section End-->   
+
+    <!-- Home page Start-->
+    <section class="home" id="home">
+      <div class="text">
+        <h1><span>Welcome</span> to <br>I Translator Home</h1>
+        <p>Are you ready for translate your Things...<br>
+          <pre>Popular: Hindi to English, French to English, Spanish to English, Japanese 
+              to English.</pre>
+        </p>
+        <div class="app-store">
+          <img src="translation.gif" alt="" width="80px">
+        </div>
+      </div>
+      <div class="home-right">
+        <img src="homeimg.png">
+      </div>
+    </section>
+    <!-- Home page End-->
+
+    <!-- Translator start -->
+    <section id="translator" class="translator">
+      <video id="vd" autoplay muted loop>
+        <source src="Connected.mp4" type="video/mp4">
+      </video>
+        <div class="container">
+          
+            <div class="wrapper">
+              
+              <div class="text-input">
+                
+                <textarea spellcheck="false" class="from-text" placeholder="Enter your Script"></textarea>  
+
+                <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translated Script"></textarea>   
+
+              </div>
+
+              <ul class="controls">
+                <li class="row from">
+                  <div class="icons">
+
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                  
+                  </div>
+                  <select></select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                  <select></select>
+                  <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button>Translate</button> 
+          </div>
+      <script src="Contry.js"></script>
+      <script src="LTJS.js"></script>
+    </section>
+    <!-- Home Translator End -->
+
+    <!-- How to Use Section Start-->
+    <section class="features" id="howToUse">
+      <div class="heading">
+        <span>Procedure</span>
+        <h1>How to Use This Platform</h1>
+      </div>
+      <div class="features-container">
+        <div class="features-img">
+          <img src="img2.png" alt="">
+        </div>
+        <div class="about-text">
+          <h3>Procedure</h3>
+          <br>
+          <span>Step-1</span>
+          <div class="line">Search at the address bar then search the the website Language Translator. <a class="open-btn" href="Final.html" target="_blank">Click Here</a></div>
+          <span>Step-2</span>
+          <div class="line">Click the Translator option from the menu bar, It opens the Translator page.</div>
+          <span>Step-3</span>
+          <div class="line">Type your script then choose your script language from dropdown menu, then choose your required/destination language from the right side dropdown menu. Then click the "Let's Go" Button. The Output will be show within 2 to 3 second.</div><br>
+        </div>
+      </div>
+    </section>
+    
+    <!-- How to Use Section End-->
+
+    <!-- Features Section Start-->
+    <section class="features" id="features">
+      <div class="heading">
+        <span>Features</span>
+        <h1>Many Features Are Available Here !</h1>
+      </div>
+      <div class="features-container">
+        
+        <div class="about-text">
+          <h3>Features</h3><p>
+            <div class="line">1. Output will be show both text & speech fomat.</div>
+            <div class="line">2. Copy option is available for both source and destination section.</div>
+            <div class="line">3. You can change the source & desination script using double arrow option.</div>
+            <div class="line">4. If you don't know which Language is which Country, Don't worry about it visit the "Country Information" Button.</div></p>
+          <br>
+          <div class="two-btn">
+          <div><a class="btn" href="CountryInfo.pdf" target="_blank">Country</a></div>
+          <div><a class="btn" href="CountryInfo.pdf" download target="_blank">Download <i class="lni lni-download"></i></a></div>
+          </div>
+        </div>
+        <div class="features-img">
+          <img src="img3.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- ========== Features Section End ========== -->
+
+    <!-- ========== Contact Section Start ========= -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Let's get in touch</h2>
+          <p>Thank you for visit our platform</p>
+          <p class="connect">Connect with us :<p>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/invites/contact/?i=bljh118pbx6j&utm_content=ksjydzf" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/anil-sahu-005426243" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+            <li><a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjxobj4xb_8AhV1RmwGHe0gDpsQFnoECBEQAQ&url=https%3A%2F%2Ftwitter.com%2Flogin%3Flang%3Den&usg=AOvVaw0AMmJgcv8ZiZA73A_ttoE9" target="_blank"><i class="lni lni-twitter-original"></i></a></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+        <form id="#contact" action="https://formspree.io/f/xjvdvrng" method="POST">
+          <h3 class="title">Contact Us</h3>
+          <div class="input-container">
+            <input type="text" name="name"  class="input" id="name" placeholder="Name" required>
+            <small class="error"></small>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email"  class="input" id="mail" placeholder="Mail" required>
+            <small class="error"></small>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="number"  class="input" id="number" placeholder="Mobile Number" required>
+            <small class="error"></small>
+          </div>
+          <div class="input-container">
+            <textarea name="Message" rows="6"  class="input" id="message" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="last-btn" target="_blank" >Send</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    <!-- ========== Contacts Section End ========= -->
+
+    <!-- ========== Footer Section Start ========= -->
+    <footer>
+      <small>Copyright &copy; All Right Reserved</small>
+    </footer>
+    <!-- ========== Footer Section Start ========= -->
+</body>
+</html>
